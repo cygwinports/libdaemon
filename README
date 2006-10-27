@@ -1,0 +1,128 @@
+libdaemon
+------------------------------------------
+libdaemon is a lightweight C library that eases the writing of UNIX
+daemons. It consists of the following parts:
+  * A wrapper around fork() which does the correct daemonization
+    procedure of a process
+  * A wrapper around syslog() for simpler and compatible log output to
+    Syslog or STDERR
+  * An API for writing PID files
+  * An API for serializing UNIX signals into a pipe for usage with
+    select() or poll()
+  * An API for running subprocesses with STDOUT and STDERR redirected
+    to syslog.
+
+Runtime requirements:
+  cygwin-1.5.21-2
+
+Build requirements:
+  cygwin-1.5.21-2
+  autoconf2.5-2.60-1
+  automake1.9-1.9.6-1
+  binutils-20050817-1
+  cygport-0.2.6-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.22-1
+  make-3.81-1
+  sed-4.1.5-1
+
+Canonical website:
+  http://0pointer.de/lennart/projects/libdaemon/
+
+Canonical download:
+  http://0pointer.de/lennart/projects/libdaemon/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libdaemon-0.10-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libdaemon-0.10-X.cygport all
+
+This will create:
+  /usr/src/libdaemon-0.10-X-src.tar.bz2
+  /usr/src/libdaemon-0.10-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libdaemon)
+  /usr/share/doc/Cygwin/libdaemon-0.10.README
+  /usr/share/doc/libdaemon-0.10/LICENSE
+  /usr/share/doc/libdaemon-0.10/README
+  /usr/share/doc/libdaemon-0.10/html/daemon_8h-source.html
+  /usr/share/doc/libdaemon-0.10/html/daemon_8h.html
+  /usr/share/doc/libdaemon-0.10/html/dexec_8h-source.html
+  /usr/share/doc/libdaemon-0.10/html/dexec_8h.html
+  /usr/share/doc/libdaemon-0.10/html/dfork_8h-source.html
+  /usr/share/doc/libdaemon-0.10/html/dfork_8h.html
+  /usr/share/doc/libdaemon-0.10/html/dlog_8h-source.html
+  /usr/share/doc/libdaemon-0.10/html/dlog_8h.html
+  /usr/share/doc/libdaemon-0.10/html/dnonblock_8h-source.html
+  /usr/share/doc/libdaemon-0.10/html/dnonblock_8h.html
+  /usr/share/doc/libdaemon-0.10/html/doxygen.css
+  /usr/share/doc/libdaemon-0.10/html/doxygen.png
+  /usr/share/doc/libdaemon-0.10/html/dpid_8h-source.html
+  /usr/share/doc/libdaemon-0.10/html/dpid_8h.html
+  /usr/share/doc/libdaemon-0.10/html/dsignal_8h-source.html
+  /usr/share/doc/libdaemon-0.10/html/dsignal_8h.html
+  /usr/share/doc/libdaemon-0.10/html/examples.html
+  /usr/share/doc/libdaemon-0.10/html/files.html
+  /usr/share/doc/libdaemon-0.10/html/ftv2blank.png
+  /usr/share/doc/libdaemon-0.10/html/ftv2doc.png
+  /usr/share/doc/libdaemon-0.10/html/ftv2folderclosed.png
+  /usr/share/doc/libdaemon-0.10/html/ftv2folderopen.png
+  /usr/share/doc/libdaemon-0.10/html/ftv2lastnode.png
+  /usr/share/doc/libdaemon-0.10/html/ftv2link.png
+  /usr/share/doc/libdaemon-0.10/html/ftv2mlastnode.png
+  /usr/share/doc/libdaemon-0.10/html/ftv2mnode.png
+  /usr/share/doc/libdaemon-0.10/html/ftv2node.png
+  /usr/share/doc/libdaemon-0.10/html/ftv2plastnode.png
+  /usr/share/doc/libdaemon-0.10/html/ftv2pnode.png
+  /usr/share/doc/libdaemon-0.10/html/ftv2vertline.png
+  /usr/share/doc/libdaemon-0.10/html/globals.html
+  /usr/share/doc/libdaemon-0.10/html/globals_defs.html
+  /usr/share/doc/libdaemon-0.10/html/globals_enum.html
+  /usr/share/doc/libdaemon-0.10/html/globals_eval.html
+  /usr/share/doc/libdaemon-0.10/html/globals_func.html
+  /usr/share/doc/libdaemon-0.10/html/globals_type.html
+  /usr/share/doc/libdaemon-0.10/html/globals_vars.html
+  /usr/share/doc/libdaemon-0.10/html/index.html
+  /usr/share/doc/libdaemon-0.10/html/main.html
+  /usr/share/doc/libdaemon-0.10/html/tab_b.gif
+  /usr/share/doc/libdaemon-0.10/html/tab_l.gif
+  /usr/share/doc/libdaemon-0.10/html/tab_r.gif
+  /usr/share/doc/libdaemon-0.10/html/tabs.css
+  /usr/share/doc/libdaemon-0.10/html/testd_8c-example.html
+  /usr/share/doc/libdaemon-0.10/html/tree.html
+
+(libdaemon0)
+  /usr/bin/cygdaemon-0.dll
+
+(libdaemon-devel)
+  /usr/include/libdaemon/daemon.h
+  /usr/include/libdaemon/dexec.h
+  /usr/include/libdaemon/dfork.h
+  /usr/include/libdaemon/dlog.h
+  /usr/include/libdaemon/dnonblock.h
+  /usr/include/libdaemon/dpid.h
+  /usr/include/libdaemon/dsignal.h
+  /usr/lib/libdaemon.a
+  /usr/lib/libdaemon.dll.a
+  /usr/lib/libdaemon.la
+  /usr/lib/pkgconfig/libdaemon.pc
+
+------------------
+
+Port Notes:
+
+----- version 0.10-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
