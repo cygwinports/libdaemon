@@ -13,19 +13,19 @@ daemons. It consists of the following parts:
     to syslog.
 
 Runtime requirements:
-  cygwin-1.5.21-2
+  cygwin-1.5.24-2
 
 Build requirements:
-  cygwin-1.5.21-2
-  autoconf2.5-2.60-1
-  automake1.9-1.9.6-1
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
   binutils-20050817-1
-  cygport-0.2.6-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  libtool1.5-1.5.22-1
+  cygport-0.3.5-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
   make-3.81-1
-  sed-4.1.5-1
+  sed-4.1.5-2
 
 Canonical website:
   http://0pointer.de/lennart/projects/libdaemon/
@@ -36,69 +36,71 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libdaemon-0.10-X-src.tar.bz2
+  unpack libdaemon-0.12-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libdaemon-0.10-X.cygport all
+  cygport ./libdaemon-0.12-X.cygport all
 
 This will create:
-  /usr/src/libdaemon-0.10-X-src.tar.bz2
-  /usr/src/libdaemon-0.10-X.tar.bz2
+  /usr/src/libdaemon-0.12-X-src.tar.bz2
+  /usr/src/libdaemon-0.12-X.tar.bz2
+  /usr/src/libdaemon-devel-0.12-X.tar.bz2
+  /usr/src/libdaemon0-0.12-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
 (libdaemon)
-  /usr/share/doc/Cygwin/libdaemon-0.10.README
-  /usr/share/doc/libdaemon-0.10/LICENSE
-  /usr/share/doc/libdaemon-0.10/README
-  /usr/share/doc/libdaemon-0.10/html/daemon_8h-source.html
-  /usr/share/doc/libdaemon-0.10/html/daemon_8h.html
-  /usr/share/doc/libdaemon-0.10/html/dexec_8h-source.html
-  /usr/share/doc/libdaemon-0.10/html/dexec_8h.html
-  /usr/share/doc/libdaemon-0.10/html/dfork_8h-source.html
-  /usr/share/doc/libdaemon-0.10/html/dfork_8h.html
-  /usr/share/doc/libdaemon-0.10/html/dlog_8h-source.html
-  /usr/share/doc/libdaemon-0.10/html/dlog_8h.html
-  /usr/share/doc/libdaemon-0.10/html/dnonblock_8h-source.html
-  /usr/share/doc/libdaemon-0.10/html/dnonblock_8h.html
-  /usr/share/doc/libdaemon-0.10/html/doxygen.css
-  /usr/share/doc/libdaemon-0.10/html/doxygen.png
-  /usr/share/doc/libdaemon-0.10/html/dpid_8h-source.html
-  /usr/share/doc/libdaemon-0.10/html/dpid_8h.html
-  /usr/share/doc/libdaemon-0.10/html/dsignal_8h-source.html
-  /usr/share/doc/libdaemon-0.10/html/dsignal_8h.html
-  /usr/share/doc/libdaemon-0.10/html/examples.html
-  /usr/share/doc/libdaemon-0.10/html/files.html
-  /usr/share/doc/libdaemon-0.10/html/ftv2blank.png
-  /usr/share/doc/libdaemon-0.10/html/ftv2doc.png
-  /usr/share/doc/libdaemon-0.10/html/ftv2folderclosed.png
-  /usr/share/doc/libdaemon-0.10/html/ftv2folderopen.png
-  /usr/share/doc/libdaemon-0.10/html/ftv2lastnode.png
-  /usr/share/doc/libdaemon-0.10/html/ftv2link.png
-  /usr/share/doc/libdaemon-0.10/html/ftv2mlastnode.png
-  /usr/share/doc/libdaemon-0.10/html/ftv2mnode.png
-  /usr/share/doc/libdaemon-0.10/html/ftv2node.png
-  /usr/share/doc/libdaemon-0.10/html/ftv2plastnode.png
-  /usr/share/doc/libdaemon-0.10/html/ftv2pnode.png
-  /usr/share/doc/libdaemon-0.10/html/ftv2vertline.png
-  /usr/share/doc/libdaemon-0.10/html/globals.html
-  /usr/share/doc/libdaemon-0.10/html/globals_defs.html
-  /usr/share/doc/libdaemon-0.10/html/globals_enum.html
-  /usr/share/doc/libdaemon-0.10/html/globals_eval.html
-  /usr/share/doc/libdaemon-0.10/html/globals_func.html
-  /usr/share/doc/libdaemon-0.10/html/globals_type.html
-  /usr/share/doc/libdaemon-0.10/html/globals_vars.html
-  /usr/share/doc/libdaemon-0.10/html/index.html
-  /usr/share/doc/libdaemon-0.10/html/main.html
-  /usr/share/doc/libdaemon-0.10/html/tab_b.gif
-  /usr/share/doc/libdaemon-0.10/html/tab_l.gif
-  /usr/share/doc/libdaemon-0.10/html/tab_r.gif
-  /usr/share/doc/libdaemon-0.10/html/tabs.css
-  /usr/share/doc/libdaemon-0.10/html/testd_8c-example.html
-  /usr/share/doc/libdaemon-0.10/html/tree.html
+  /usr/share/doc/Cygwin/libdaemon-0.12.README
+  /usr/share/doc/libdaemon-0.12/LICENSE
+  /usr/share/doc/libdaemon-0.12/README
+  /usr/share/doc/libdaemon-0.12/html/daemon_8h-source.html
+  /usr/share/doc/libdaemon-0.12/html/daemon_8h.html
+  /usr/share/doc/libdaemon-0.12/html/dexec_8h-source.html
+  /usr/share/doc/libdaemon-0.12/html/dexec_8h.html
+  /usr/share/doc/libdaemon-0.12/html/dfork_8h-source.html
+  /usr/share/doc/libdaemon-0.12/html/dfork_8h.html
+  /usr/share/doc/libdaemon-0.12/html/dlog_8h-source.html
+  /usr/share/doc/libdaemon-0.12/html/dlog_8h.html
+  /usr/share/doc/libdaemon-0.12/html/dnonblock_8h-source.html
+  /usr/share/doc/libdaemon-0.12/html/dnonblock_8h.html
+  /usr/share/doc/libdaemon-0.12/html/doxygen.css
+  /usr/share/doc/libdaemon-0.12/html/doxygen.png
+  /usr/share/doc/libdaemon-0.12/html/dpid_8h-source.html
+  /usr/share/doc/libdaemon-0.12/html/dpid_8h.html
+  /usr/share/doc/libdaemon-0.12/html/dsignal_8h-source.html
+  /usr/share/doc/libdaemon-0.12/html/dsignal_8h.html
+  /usr/share/doc/libdaemon-0.12/html/examples.html
+  /usr/share/doc/libdaemon-0.12/html/files.html
+  /usr/share/doc/libdaemon-0.12/html/ftv2blank.png
+  /usr/share/doc/libdaemon-0.12/html/ftv2doc.png
+  /usr/share/doc/libdaemon-0.12/html/ftv2folderclosed.png
+  /usr/share/doc/libdaemon-0.12/html/ftv2folderopen.png
+  /usr/share/doc/libdaemon-0.12/html/ftv2lastnode.png
+  /usr/share/doc/libdaemon-0.12/html/ftv2link.png
+  /usr/share/doc/libdaemon-0.12/html/ftv2mlastnode.png
+  /usr/share/doc/libdaemon-0.12/html/ftv2mnode.png
+  /usr/share/doc/libdaemon-0.12/html/ftv2node.png
+  /usr/share/doc/libdaemon-0.12/html/ftv2plastnode.png
+  /usr/share/doc/libdaemon-0.12/html/ftv2pnode.png
+  /usr/share/doc/libdaemon-0.12/html/ftv2vertline.png
+  /usr/share/doc/libdaemon-0.12/html/globals.html
+  /usr/share/doc/libdaemon-0.12/html/globals_defs.html
+  /usr/share/doc/libdaemon-0.12/html/globals_enum.html
+  /usr/share/doc/libdaemon-0.12/html/globals_eval.html
+  /usr/share/doc/libdaemon-0.12/html/globals_func.html
+  /usr/share/doc/libdaemon-0.12/html/globals_type.html
+  /usr/share/doc/libdaemon-0.12/html/globals_vars.html
+  /usr/share/doc/libdaemon-0.12/html/index.html
+  /usr/share/doc/libdaemon-0.12/html/main.html
+  /usr/share/doc/libdaemon-0.12/html/tab_b.gif
+  /usr/share/doc/libdaemon-0.12/html/tab_l.gif
+  /usr/share/doc/libdaemon-0.12/html/tab_r.gif
+  /usr/share/doc/libdaemon-0.12/html/tabs.css
+  /usr/share/doc/libdaemon-0.12/html/testd_8c-example.html
+  /usr/share/doc/libdaemon-0.12/html/tree.html
 
 (libdaemon0)
   /usr/bin/cygdaemon-0.dll
@@ -119,6 +121,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.12-1 -----
+Version bump.
 
 ----- version 0.10-1 -----
 Initial release for Cygwin.
