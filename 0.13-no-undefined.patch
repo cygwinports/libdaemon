@@ -1,0 +1,8 @@
+--- origsrc/libdaemon-0.12/libdaemon/Makefile.am	2007-07-10 12:58:34.000000000 -0500
++++ src/libdaemon-0.12/libdaemon/Makefile.am	2007-07-12 12:42:52.140625000 -0500
+@@ -38,4 +38,4 @@
+ 	daemon.h \
+ 	$(pkg_include_HEADERS)
+ 
+-libdaemon_la_LDFLAGS = -version-info $(LIBDAEMON_VERSION_INFO)
++libdaemon_la_LDFLAGS = -version-info $(LIBDAEMON_VERSION_INFO) -no-undefined

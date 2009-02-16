@@ -1,5 +1,5 @@
 category: Libs
-sdesc: "UNIX daemon API library (documentation)"
+sdesc: "UNIX daemon API library (sources)"
 ldesc: "libdaemon is a lightweight C library that eases the writing of
 UNIX daemons. It consists of the following parts:
   * A wrapper around fork() which does the correct daemonization
