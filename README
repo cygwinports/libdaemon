@@ -13,16 +13,16 @@ daemons. It consists of the following parts:
     to syslog.
 
 Runtime requirements:
-  cygwin-1.5.25-15
+  cygwin-1.7.0-44
+  libgcc1-4.3.2-2
 
 Build requirements:
-  cygwin-1.5.25-15
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
   libtool-2.2.6a-1
   make-3.81-2
   sed-4.1.5-2
@@ -53,8 +53,8 @@ Files included in the binary packages:
 
 (libdaemon0)
   /usr/bin/cygdaemon-0.dll
-  /usr/share/doc/libdaemon-0.13/LICENSE
-  /usr/share/doc/libdaemon-0.13/README
+  /usr/share/doc/libdaemon/LICENSE
+  /usr/share/doc/libdaemon/README
 
 (libdaemon-devel)
   /usr/include/libdaemon/daemon.h
@@ -73,14 +73,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 0.13-1 -----
-Version bump.
-
------ version 0.12-1 -----
-Version bump.
-
------ version 0.10-1 -----
-Initial release for Cygwin.
+----- version 0.13-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
