@@ -1,5 +1,5 @@
 category: Libs
-requires: libgcc1
+requires:
 external-source: libdaemon
 sdesc: "UNIX daemon API library (runtime)"
 ldesc: "libdaemon is a lightweight C library that eases the writing of
