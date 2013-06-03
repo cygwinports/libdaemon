@@ -1,0 +1,25 @@
+NAME="libdaemon"
+VERSION=0.14
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="UNIX daemon API library"
+DESCRIPTION="libdaemon is a lightweight C library that eases the writing of
+UNIX daemons. It consists of the following parts:
+  * A wrapper around fork() which does the correct daemonization
+    procedure of a process
+  * A wrapper around syslog() for simpler and compatible log output to
+    Syslog or STDERR
+  * An API for writing PID files
+  * An API for serializing UNIX signals into a pipe for usage with
+    select() or poll()
+  * An API for running subprocesses with STDOUT and STDERR redirected
+    to syslog."
+HOMEPAGE="http://0pointer.de/lennart/projects/libdaemon/"
+SRC_URI="http://0pointer.de/lennart/projects/libdaemon/libdaemon-${VERSION}.tar.gz"
+PATCH_URI="0.12-doxygen-vpath.patch"
+
+PKG_NAMES="${NAME}0 ${NAME}-devel"
+libdaemon0_CONTENTS="usr/bin/cygdaemon-0.dll usr/share/"
+libdaemon_devel_CONTENTS="usr/include/ usr/lib/"
+
+MAKEOPTS+=" LDFLAGS_NOUNDEFINED=-no-undefined "
